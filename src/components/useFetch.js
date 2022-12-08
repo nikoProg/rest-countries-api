@@ -39,7 +39,7 @@ const useFetch = (url) => {
             abortCont.abort();
             console.log('cleanup');
         }
-    }, []) 
+    }, [data]) 
 
     return {data, isPending, error}
 }
