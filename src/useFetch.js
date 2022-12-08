@@ -31,9 +31,9 @@ const useFetch = (url) => {
                     //console.log(err.message);
                 }
             });
-        }, 2000); // this number and setTimeout is artificial lag, to show the LOADING part
+        }, 500); // this number and setTimeout is artificial lag, to show the LOADING part
         //console.log('use effect ran');
-        //console.log(blogs);
+        //console.log(countries);
         return () => {
             abortCont.abort();
             console.log('cleanup');
