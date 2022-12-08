@@ -1,10 +1,10 @@
 //import logo from './logo.svg';
 import './App.css';
-import Navbar from './Navbar';
+import Navbar from './components/Navbar';
 import Home from './Home';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import CountryDetails from './CountryDetails';
-import NotFound from './NotFound';
+import CountryDetails from './components/CountryDetails';
+import NotFound from './components/NotFound';
 
 function App() {
   return (
@@ -17,8 +17,8 @@ function App() {
             <Route exact path="/">
               <Home></Home>
             </Route>
-            <Route path="/countries/:countryName">
-              <CountryDetails></CountryDetails>
+            <Route path="/countries/:countryCode">
+              <CountryDetails ></CountryDetails>
             </Route>
             <Route path="*">
               <NotFound></NotFound>

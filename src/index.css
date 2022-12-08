@@ -91,3 +91,16 @@
 .flag-img {
   width: 100%;
 }
+
+form {
+  display: flex;
+  /* flex-direction: row; */
+  justify-items: space-between;
+  width: 100%;
+  gap: 40%; 
+  border: 2px solid red;
+}
+
+.country-filters > div {
+  width: 300px;
+}
