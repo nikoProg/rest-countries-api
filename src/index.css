@@ -98,7 +98,7 @@ form {
   justify-items: space-between;
   width: 100%;
   gap: 40%; 
-  border: 2px solid red;
+  /* border: 2px solid red; */
 }
 
 .country-filters > div {

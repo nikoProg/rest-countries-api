@@ -1,15 +1,15 @@
 //import logo from './logo.svg';
 import './App.css';
 import Navbar from './components/Navbar';
-import Home from './Home';
+import Home from './components/Home';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import CountryDetails from './components/CountryDetails';
 import NotFound from './components/NotFound';
-import { CountriesProvider } from './components/CountriesContext';
+// import { CountriesProvider } from './components/CountriesContext';
 
 function App() {
   return (
-    <CountriesProvider>
+    
       <Router>
         <div className="App">
           <Navbar></Navbar>
@@ -31,7 +31,6 @@ function App() {
           </div>
         </div>
       </Router>
-    </CountriesProvider>
   );
 }
 

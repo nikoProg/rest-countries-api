@@ -6,10 +6,10 @@ const useFetch = (url) => {
     const [error, setError] = useState(null);
     
     useEffect(() => {
-        const abortCont = new AbortController();
+        //const abortCont = new AbortController();
 
         setTimeout(() => {
-            fetch(url, { signal: abortCont.signal })
+            fetch(url, /* { signal: abortCont.signal } */)
             .then(res => {
                 if(!res.ok) {
                     throw Error('could not fetch the data for that resource');
@@ -33,10 +33,10 @@ const useFetch = (url) => {
                 }
             });
         }, 500); // this number and setTimeout is artificial lag, just to show the LOADING part
-        //console.log('use effect ran');
+        console.log('use effect ran');
         //console.log(countries);
         return () => {
-            abortCont.abort();
+            //abortCont.abort();
             console.log('cleanup');
         }
     }, [data]) 
